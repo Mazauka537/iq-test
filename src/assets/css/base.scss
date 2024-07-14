@@ -1,0 +1,73 @@
+@use "sass:math";
+@import "breakpoints";
+
+:root {
+  --font-yeseva: "Yeseva One", serif;
+  --font-pt-serif: "PT Serif", serif;
+  --font-roboto: "Roboto", sans-serif;
+  --font-merriweather: "Merriweather", serif;
+
+  --color-main: #FFC700;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: none;
+  border: none;
+  outline: none;
+}
+
+html {
+  font-size: math.div(100, 320) * 1vw;
+  scroll-behavior: smooth;
+
+// none: ...-479
+// sm:   480-767
+// md:   768-999
+// lg:   1000-1919
+// xl:   1920-...
+
+@include media-breakpoint(sm) {
+  font-size: math.div(100, 480) * 1vw !important;
+}
+
+  @include media-breakpoint(md) {
+    font-size: math.div(100, 768) * 1vw !important;
+  }
+
+  @include media-breakpoint(lg) {
+    font-size: math.div(100, 1000) * 1vw !important;
+  }
+
+  @include media-breakpoint(xl) {
+    font-size: 1.5px !important;
+  }
+}
+
+body {
+  min-height: 100vh;
+  color: #FFF;
+  font-weight: 400;
+  background-image: url("@/assets/images/bg-stars.webp");
+  background-position: center center;
+  background-size: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.underline {
+  text-decoration: underline;
+}

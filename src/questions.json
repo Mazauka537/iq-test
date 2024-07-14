@@ -1,0 +1,67 @@
+[
+  {
+    "type": "select",
+    "question": "Ваш пол:",
+    "answers": [
+      {
+        "value": 1,
+        "label": "Мужчина"
+      },
+      {
+        "value": 2,
+        "label": "Женщина"
+      }
+    ]
+  },
+  {
+    "type": "select",
+    "question": "Укажите ваш возраст:",
+    "answers": [
+      {
+        "value": 1,
+        "label": "До 18"
+      },
+      {
+        "value": 2,
+        "label": "От 18 до 28"
+      },
+      {
+        "value": 3,
+        "label": "От 29 до 35"
+      },
+      {
+        "value": 4,
+        "label": "От 36"
+      }
+    ]
+  },
+  {
+    "type": "select",
+    "question": "Выберите лишнее:",
+    "answers": [
+      {
+        "value": 1,
+        "label": "Дом"
+      },
+      {
+        "value": 2,
+        "label": "Шалаш"
+      },
+      {
+        "value": 3,
+        "label": "Бунгало"
+      },
+      {
+        "value": 4,
+        "label": "Скамейка"
+      },
+      {
+        "value": 5,
+        "label": "Хижина"
+      }
+    ]
+  },
+  {
+    "type": "select",
+  }
+]

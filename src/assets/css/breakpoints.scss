@@ -1,0 +1,12 @@
+$breakpoints: (
+    sm: 480px,
+    md: 768px,
+    lg: 1000px,
+    xl: 1920px
+);
+
+@mixin media-breakpoint($breakpointName) {
+    @media screen and (min-width: map-get($breakpoints, $breakpointName)) {
+        @content;
+    }
+}
